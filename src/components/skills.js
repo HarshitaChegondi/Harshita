@@ -23,18 +23,28 @@ import eclipse from "../assets/img/eclipse.svg";
 import formtitan from "../assets/img/formtitan.png";
 import tableau from "../assets/img/Tableau.png";
 import docker from "../assets/img/docker.png";
+import github from "../assets/img/github.svg";
+
+import git from "../assets/img/git.png";
+import jira from "../assets/img/jira.png";
+import confluence from "../assets/img/confluence.png";
+import tf from "../assets/img/tf.png";
+import keras from "../assets/img/keras.png";
+
+
+
+
 
 export const Skills = () => {
   return (
     <section className="skill" id="skills">
-        <div><h2>Technical Skills</h2></div>
+        <div><h2>TECHNICAL SKILLS</h2></div>
       {/* Programming Languages Table */}
       <Container>
-        
-        <Table responsive className="skill-table">
+        <Table className="skill-table">
           <tbody>
             <tr>
-            <td>Programming Languages</td>
+              <th>Programming Languages</th>
               <td><img src={Java} alt="Java" /></td>
               <td><img src={Python} alt="Python" /></td>
               <td><img src={C} alt="C" /></td>
@@ -45,13 +55,11 @@ export const Skills = () => {
         </Table>
       </Container>
 
-      {/* Cloud Technologies Table */}
       <Container>
-        <h4>Cloud Technologies</h4>
         <Table responsive className="skill-table">
-
           <tbody>
             <tr>
+              <th>Cloud Technologies</th>
               <td><img src={Salesforce} alt="Salesforce" /></td>
               <td><img src={AWS} alt="AWS" /></td>
             </tr>
@@ -61,10 +69,10 @@ export const Skills = () => {
 
       {/* Web Technologies Table */}
       <Container>
-        <h4>Web Technologies</h4>
         <Table responsive className="skill-table">
           <tbody>
             <tr>
+              <th>Web Technologies</th>
               <td><img src={HTML} alt="HTML" /></td>
               <td><img src={CS} alt="CSS" /></td>
               <td><img src={JavaScript} alt="JavaScript" /></td>
@@ -78,11 +86,11 @@ export const Skills = () => {
 
       {/* Database Management Table */}
       <Container>
-        <h4>Database Management</h4>
+        
         <Table responsive className="skill-table">
-          
           <tbody>
             <tr>
+              <th>Database Management</th>
               <td><img src={mysql} alt="MySQL" /></td>
               <td><img src={oracle} alt="Oracle SQL" /></td>
               <td><img src={postgresql} alt="PostgreSQL" /></td>
@@ -93,17 +101,35 @@ export const Skills = () => {
       </Container>
 
       <Container>
-        <h4>Developer Tools</h4>
+      
         <Table responsive className="skill-table">
-          
+
           <tbody>
             <tr>
+              <th>Developer Tools</th>
               <td><img src={vscode} alt="MySQL" /></td>
               <td><img src={eclipse} alt="Oracle SQL" /></td>
               <td><img src={tableau} alt="PostgreSQL" /></td>
               <td><img src={formtitan} alt="SOQL" /></td>
               <td><img src={docker} alt="SOQL" /></td>
               <td><img src={jupyter} alt="SOQL" /></td>
+              <td><img src={github} alt="SOQL" /></td>
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
+
+      <Container>
+        <Table responsive className="skill-table">
+
+          <tbody>
+            <tr>
+              <th>Other Skills</th>
+              <td><img src={git} alt="MySQL" /></td>
+              <td><img src={jira} alt="Oracle SQL" /></td>
+              <td><img src={confluence} alt="PostgreSQL" /></td>
+              <td><img src={tf} alt="SOQL" /></td>
+              <td><img src={keras} alt="SOQL" /></td>
             </tr>
           </tbody>
         </Table>

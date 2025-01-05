@@ -68,7 +68,7 @@ export const Banner = () => {
                         <button className='tagline' onClick={handleDownload}>Download Resume <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={5} md={5} xl={2}>
-                        <img src={headerImg} alt="Header img" />
+                        <img src={headerImg} alt="Header img" className="circular-image" />
                     </Col>
                 </Row>
             </Container>

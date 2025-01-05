@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import logo from '../assets/img/logo-png.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.png';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -16,6 +15,20 @@ export const NavBar = () => {
             } else {
                 setScrolled(false);
             }
+
+            // Section detection logic
+            const sections = document.querySelectorAll("section");
+            let current = "home"; // Default section
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            setActiveLink(current);
         };
 
         window.addEventListener("scroll", onScroll);
@@ -30,7 +43,6 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    {/*<img src={logo} alt="logo" />*/}
                     <h3 className="logoName">Harshita Chegondi</h3>
                 </Navbar.Brand>
 
@@ -81,7 +93,6 @@ export const NavBar = () => {
                             onClick={() => onUpdateActiveLink('certifications')}>
                             Certifications
                         </Nav.Link>
-
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
@@ -92,10 +103,8 @@ export const NavBar = () => {
                                                                 .scrollIntoView({ behavior: 'smooth' });}}>
                             <span>Let's Connect</span>
                         </button>
-
                     </span>
                 </Navbar.Collapse>
-
             </Container>
         </Navbar>
     );

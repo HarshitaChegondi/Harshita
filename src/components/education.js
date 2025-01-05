@@ -8,7 +8,7 @@ export const Education = () =>{
     return(
         <section className="education" id="education" >
             <br/>
-            <div><h2>Education</h2></div>
+            <div><h2>EDUCATION</h2></div>
             <Container>
                 <Row>
 

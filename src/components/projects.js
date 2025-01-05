@@ -8,13 +8,16 @@ import HTML from "../assets/img/html.png";
 import CS from "../assets/img/css.png";
 import React from "../assets/img/react.png";
 import Nodejs from "../assets/img/nodejs.png";
+import Python from "../assets/img/python.png";
+import jupyter from "../assets/img/jupyter.png";
+import github from "../assets/img/github.svg";
 
 
 export const Projects = () => {
     return (
         <section className="project" id="projects">
             <br/>
-            <div><h2>Projects</h2></div>
+            <div><h2>PROJECTS</h2></div>
             <div className="tabs">
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={12}>
@@ -35,6 +38,11 @@ export const Projects = () => {
                                                 perception insights.
                                             </li>
                                         </ul>
+                                        <p> Tech Stack: 
+                                        Python, Jupyter Notebook, Github
+
+                                        
+                                        </p>
                                         
                                         </Col>
                                     </Row>
@@ -57,11 +65,8 @@ export const Projects = () => {
                                             enhancing course management efficiency by 30% in full-stack development 
                                             </li>
                                         </ul>
-                                        <p> Tools and technologies used: 
-                                        <img src={React} alt="Image" />
-                                        <img src={CS} alt="Image" />
-                                        <img src={Nodejs} alt="Image" />
-                                        <img src={VSCODE} alt="Image" />
+                                        <p> Tech Stack: 
+                                        ReactJS, CSS, Node.JS, PHP, VS CODE
                                         </p>
                                         </Col>
                                     </Row>
@@ -85,10 +90,7 @@ export const Projects = () => {
                                             causes slowing down overall system responsiveness during operations  
                                             </li>
                                         </ul>
-                                        <p> Tools and technologies used: <img src={HTML} alt="Image" />
-                                        <img src={CS} alt="Image" />
-                                        <img src={JavaScript} alt="Image" />
-                                        <img src={VSCODE} alt="Image" />
+                                        <p> Tech Stack: HTML, CSS, JavaScript, VS Code, Github
                                         </p>
                                         
                                         </Col>

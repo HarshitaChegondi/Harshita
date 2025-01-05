@@ -8,7 +8,7 @@ export const Certifications = () => {
     return (
         <section className="certificate" id="certifications">
             <Container>
-                <div><h2>Certifications / Awards</h2></div>
+                <div><h2>CERTIFICATIONS / AWARDS</h2></div>
                 <br />
                 <Row className="g-4">
                     <Col xs={12} sm={6} md={4} lg={3}>

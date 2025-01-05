@@ -7,7 +7,7 @@ export const Experience = () => {
     return(
         <section className="experience" id="experience">
             <br/>
-            <div><h2>Work Experience</h2></div>
+            <div><h2>WORK EXPERIENCE</h2></div>
             <Container>
                 <Row>
                     <Col xs={4} md={6} xl={2}>
@@ -17,7 +17,7 @@ export const Experience = () => {
                     </Col>
                     
                     <Col xs={7} md={6} xl={10}>
-                        <h5>Senior Software Engineer</h5>
+                        <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
                         <ul>
                             <li>Tackled inefficiencies within non-profit program management processes on company’s 
                                 CRM by translating complex diagrams into functional systems using Salesforce framework; 
@@ -34,7 +34,7 @@ export const Experience = () => {
                                 processing time by half and achieved 30% reduction in errors </li>
                         </ul>
 
-                        <h5>Software Engineer</h5>
+                        <h5>Software Engineer | Apr 2021 - Apr 2022</h5>
                         <ul>
                             <li>Led the implementation of a customized application form within Salesforce HEDA using 
                                 Aura components, JavaScript, and Apex; designed and developed complex inter-object relationships
@@ -47,7 +47,7 @@ export const Experience = () => {
                                 availability initiatives</li>
                         </ul>
 
-                        <h5>Salesforce Intern</h5>
+                        <h5>Salesforce Intern | Sept 2020 - Apr 2021</h5>
                         <ul>
                             <li>By orchestrating workflows and validation rules within Salesforce platforms, 
                         there was a noticeable enhancement in operational efficiency. Developing Asynchronous 
@@ -73,7 +73,7 @@ export const Experience = () => {
                     </Col>
 
                     <Col xs={7} md={6} xl={10}>
-                        <h5>Data Analyst Intern</h5>
+                        <h5>Data Analyst Intern | May 2019 - Jun 2019</h5>
                         <ul>
                             <li>Applied advanced analytics to healthcare Charge Description Master Listings, 
                                 identifying cost-saving opportunities, achieving a 15% operational expense reduction, 

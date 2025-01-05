@@ -59,7 +59,7 @@ export const Footer = () => {
                         <h3>Contact Me</h3>
                         <Form onSubmit={handleSubmit}>
                             <Row>
-                                <Col xs={12}>
+                                <Col xs={12} >
                                     <Form.Group className="mb-3" controlId="name">
                                         <Form.Label>Your Name</Form.Label>
                                         <Form.Control
@@ -75,7 +75,7 @@ export const Footer = () => {
                             </Row>
 
                             <Row>
-                                <Col xs={12}>
+                                <Col xs={12} >
                                     <Form.Group className="mb-3" controlId="email">
                                         <Form.Label>Your Email</Form.Label>
                                         <Form.Control
@@ -120,14 +120,14 @@ export const Footer = () => {
                         <Row>
                             <Col xs={12}>
                                 <div>
-                                    <h5><img src={gmail} alt="Gmail" /> harshita.chegondi@gmail.com</h5>
+                                    <h5>harshita.chegondi@gmail.com</h5>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={12}>
                                 <div>
-                                    <h5><img src={phone} alt="Phone" /> +1 (682)-392-5855</h5>
+                                    <h5>+1 (682)-392-5855</h5>
                                 </div>
                             </Col>
                         </Row>

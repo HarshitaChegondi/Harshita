@@ -313,6 +313,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
+.circular-image {
+  width: 100%;
+  height: auto; /* Ensures aspect ratio is maintained */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circular area */
+  border: 2px solid #ccc; /* Optional: Adds a border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
 /************ Experience CSS ********/
 .experience img{
   width: 100%;
@@ -329,66 +339,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #918e8e;
 }
 /************ Skills Css ************/
-.skill h2{
-  text-align: center;
-  color:#0b0568;
-}
-.skill {
-  padding: 40px 0;
-}
-
-.skill-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: none; /* Remove border for the table */
-}
-
-.skill-table th, .skill-table td {
-  padding: 20px;
-  border: none; /* Remove border for table headers and cells */
-}
-
-
-.skill-table th {
-  background-color: #f8f9fa;
-  font-weight: bold;
-}
-
-.skill-table td img {
-  width: 50px;
-  height: auto;
-}
-
-.skill-table h5 {
-  margin-top: 10px;
-}
-
-section h4 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+.skill h5 {
+  color: #050c8e;
 }
 
 .skill h2 {
-	font-size: 45px;
-}
-.skill p {
-    color: #0b0568;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 0em;
-    margin: 0px 0 0px 0;
+  text-align: center;
+  color: #0b0568;
 }
 
-.skill img{
-  width: 10%;
+.skill {
+  padding: 20px 0; /* Add padding for spacing between sections */
 }
-.background-image-left {
-  top: 1%;
-  position: absolute;
-  bottom: 0;
-  width: 0%;
-  z-index: 0;
+
+.skill-table {
+  width: 100%; /* Ensure full width for the table */
+  border-collapse: collapse; /* Remove spacing between table cells */
+  margin: 20px 0; /* Add spacing around tables */
 }
+
+.skill-table th,
+.skill-table td {
+  border: none; /* Remove borders */
+  text-align: left; /* Align content to the left */
+  padding: 5px 5px; /* Apply minimal padding */
+  vertical-align: middle; /* Align content vertically */
+}
+
+.skill-table th {
+  background-color: #f8f9fa; /* Header background */
+  font-weight: bold; /* Keep text bold */
+  font-size: 14px; /* Smaller font size */
+  padding: 2px 6px; /* Very minimal padding */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-align: left; /* Center align header text */
+  vertical-align: middle; /* Align header content vertically */
+  line-height: 1; /* Reduce line height to tighten the header */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.skill-table td img {
+  width: 60px; /* Ensure consistent image size */
+  display: block; /* Proper block layout for images */
+  margin: 0 auto; /* Center images horizontally */
+  padding: 0; /* Remove any padding below the images */
+}
+
+.skill-table td {
+  align-items: left; /* Vertically align items in the center */
+  justify-content: center; /* Horizontally align items in the center */
+  font-size: 14px; /* Adjust text size */
+  padding: 5px; /* Minimal padding to reduce gaps */
+}
+
+.skill p {
+  color: #0b0568;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+
 
 /************ Education CSS ********/
 .education img{
@@ -446,9 +458,7 @@ section h4 {
 
 
 @media (min-width: 1205px) { /* For large screens: min-width 1201px */
-  .education h2 {
-    font-size: 2.5rem;
-  }
+ 
 
   .education h5 {
     font-size: 1.6rem;
@@ -501,6 +511,9 @@ section h4 {
 }
 
 /* Add this CSS to your stylesheet */
+.custom-tab {
+  border-bottom: none;
+}
 .custom-tab .nav-link {
   border-radius: 10px; /* Makes the buttons oval */
   padding: 10px 10px; /* Adjusts the padding for better appearance */
@@ -646,130 +659,105 @@ section h4 {
 }
 
 /************ Footer Css ************/
-.footer {
-  padding: 0 0 50px 0;
-  /*background-image: url('./assets/img/footer-bg.png');*/
-  background-color: #0b0568;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #ffffff;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #000;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #ffffff;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #000;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-.footer img {
-  width: 26%;
-}
-.footer p h3{
-  font-weight: 400;
-  font-size: 14px;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
-
-.formbox{
-  width: 700px;
-  padding: 60px;
-  color: #ffffff;
-}
-
-#name{
-  padding-right: 10px;
-  width: 300px;
-}
-
-#email{
-  width: 300px;
-}
-
-#queries{
-  width: 300px;
-}
-
-
-.submit-button{
+.submit-button {
   background-color: #FFFFFF;
   color: #000;
-  padding: 10px 25px 10px 25px;
-  border-radius: 10%;
+  padding: 10px 25px;
+  border-radius: 5%;
+  border: 1px solid #000; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
 
-.second-box {
-  align:right;
-  padding-left:30px;
+.submit-button:hover {
+  background-color: #337fdb; /* Change background color on hover */
+  color: #FFFFFF; /* Change text color on hover */
+  border-color: #FFFFFF; /* Optional: Change border color on hover */
+}
+/* Responsive adjustments */
+@media (max-width: 4000px) {
+  .footer {
+    padding: 0 0 50px 0;
+    background-color: #0b0568;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  .footer p h3 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  
+  .formbox {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    color: #ffffff;
+  }
+  
+  #name, #email, #queries {
+    width: 70%;
+  }
+  
+  
+  .second-box {
+    padding: 100px 0 0 0 ;
+  }
+  
+  .second-box h5 {
+    color: #fff;
+  }
+  
+  .container-footer {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .formbox {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container-footer {
+    flex-direction: column; /* Stack the form and contact info on top of each other */
+    align-items: center;
+  }
+
+  .second-box {
+    margin-top: 5px;
+  }
+
+  .footer img {
+    width: 5%; /* Adjust image size on smaller screens */
+  }
+
+  .submit-button {
+    width: 80%;
+  }
 }
 
-.second-box h5 {
-  color:#fff
-}
+@media (max-width: 480px) {
+  .footer p h3 {
+    font-size: 12px;
+  }
 
-.second-box img {
-  width: 3%;
-  padding-bottom: 6px;
-}
 
-.container-footer{
-  display: flex; /* Use flexbox for layout */
-  justify-content: flex-start; /* Align items horizontally */
-  align-items: center; /* Optional: Align items vertically */
-  gap: 30px;
-}
+  .second-box h5 {
+    font-size: 14px;
 
+  }
+
+  .second-box {
+    padding: 14px 0 0 14px;
+
+  }
+  
+}
