@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Harshita_portfolio.github.io/static/css/main.0f38620a.css",
-    "main.js": "/Harshita_portfolio.github.io/static/js/main.25faec12.js",
+    "main.js": "/Harshita_portfolio.github.io/static/js/main.a920e353.js",
     "static/js/358.226e2fea.chunk.js": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js",
     "static/media/applause.jpg": "/Harshita_portfolio.github.io/static/media/applause.fcea3bf7230b92cd7eef.jpg",
     "static/media/coursera.jpg": "/Harshita_portfolio.github.io/static/media/coursera.5a1c6655684b0f9a7a83.jpg",
@@ -11,7 +11,6 @@
     "static/media/head.jpg": "/Harshita_portfolio.github.io/static/media/head.69bd6f0f9520e38130fb.jpg",
     "static/media/oracle.jpg": "/Harshita_portfolio.github.io/static/media/oracle.670b48dcc08249b82a9c.jpg",
     "static/media/confluence.png": "/Harshita_portfolio.github.io/static/media/confluence.073ae5e51ded474c8fd7.png",
-    "static/media/logo-png.png": "/Harshita_portfolio.github.io/static/media/logo-png.f080ebd5396bc07de1dc.png",
     "static/media/nodejs.png": "/Harshita_portfolio.github.io/static/media/nodejs.14cdee7fa498e8a7c7d3.png",
     "static/media/absyz.jpg": "/Harshita_portfolio.github.io/static/media/absyz.3dba602c40469ccee5ae.jpg",
     "static/media/Salesforce.jpg": "/Harshita_portfolio.github.io/static/media/Salesforce.51f64c1bba624e5dc218.jpg",
@@ -28,24 +27,22 @@
     "static/media/keras.png": "/Harshita_portfolio.github.io/static/media/keras.a4b0526613e18f576366.png",
     "static/media/cpp.png": "/Harshita_portfolio.github.io/static/media/cpp.053a898d752aef72651e.png",
     "static/media/c.png": "/Harshita_portfolio.github.io/static/media/c.0c86f5001e02e6a96009.png",
-    "static/media/gmail.png": "/Harshita_portfolio.github.io/static/media/gmail.8e186dc3aac2854c5d14.png",
     "static/media/react.png": "/Harshita_portfolio.github.io/static/media/react.a2203d7ec91fc9bc60d5.png",
     "static/media/github.png": "/Harshita_portfolio.github.io/static/media/github.bb1bcb4c34e56ddbc178.png",
     "static/media/bootstrap.png": "/Harshita_portfolio.github.io/static/media/bootstrap.80c686389af47294a233.png",
     "static/media/SOQL.webp": "/Harshita_portfolio.github.io/static/media/SOQL.8cb015ee23e05288cf9a.webp",
     "static/media/css.png": "/Harshita_portfolio.github.io/static/media/css.23220016a948042dfa1a.png",
     "static/media/js.png": "/Harshita_portfolio.github.io/static/media/js.266bd9fb2663dcc057b4.png",
-    "static/media/p2.webp": "/Harshita_portfolio.github.io/static/media/p2.b66ed2a064eae1b9ea1c.webp",
     "static/media/eclipse.svg": "/Harshita_portfolio.github.io/static/media/eclipse.930aaf4f6a57da34c5080476c4cd2612.svg",
     "static/media/github.svg": "/Harshita_portfolio.github.io/static/media/github.255db585f8a0eb28a1e4deb91bde207d.svg",
     "index.html": "/Harshita_portfolio.github.io/index.html",
     "static/media/nav-icon1.svg": "/Harshita_portfolio.github.io/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.0f38620a.css.map": "/Harshita_portfolio.github.io/static/css/main.0f38620a.css.map",
-    "main.25faec12.js.map": "/Harshita_portfolio.github.io/static/js/main.25faec12.js.map",
+    "main.a920e353.js.map": "/Harshita_portfolio.github.io/static/js/main.a920e353.js.map",
     "358.226e2fea.chunk.js.map": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f38620a.css",
-    "static/js/main.25faec12.js"
+    "static/js/main.a920e353.js"
   ]
 }
