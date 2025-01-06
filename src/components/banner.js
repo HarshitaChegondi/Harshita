@@ -51,7 +51,11 @@ export const Banner = () => {
         link.href = resume; // Replace with the file's URL
         link.download = 'HarshitaChegondi.pdf'; // Set the file name
         link.click();
+
+       
       };
+
+      
     return(
         <section className="banner" id="home">
             <br/>
