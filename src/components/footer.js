@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Form } from "react-bootstrap";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import gmail from "../assets/img/gmail.png";
-import phone from "../assets/img/p2.webp";
+
 
 export const Footer = () => {
     const [formData, setFormData] = useState({

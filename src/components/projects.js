@@ -2,15 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import JavaScript from "../assets/img/js.png";
-import VSCODE from "../assets/img/vs.jpg";
-import HTML from "../assets/img/html.png";
-import CS from "../assets/img/css.png";
-import React from "../assets/img/react.png";
-import Nodejs from "../assets/img/nodejs.png";
-import Python from "../assets/img/python.png";
-import jupyter from "../assets/img/jupyter.png";
-import github from "../assets/img/github.svg";
+
 
 
 export const Projects = () => {
