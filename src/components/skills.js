@@ -1,4 +1,4 @@
-import { Container, Row, Col, Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import Java from "../assets/img/java-logo.png";
 import Python from "../assets/img/python.png";
 import C from "../assets/img/c.png";
