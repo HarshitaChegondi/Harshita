@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Harshita_portfolio.github.io/static/css/main.0f38620a.css",
-    "main.js": "/Harshita_portfolio.github.io/static/js/main.a920e353.js",
+    "main.js": "/Harshita_portfolio.github.io/static/js/main.7044d05f.js",
     "static/js/358.226e2fea.chunk.js": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js",
     "static/media/applause.jpg": "/Harshita_portfolio.github.io/static/media/applause.fcea3bf7230b92cd7eef.jpg",
     "static/media/coursera.jpg": "/Harshita_portfolio.github.io/static/media/coursera.5a1c6655684b0f9a7a83.jpg",
@@ -38,11 +38,11 @@
     "index.html": "/Harshita_portfolio.github.io/index.html",
     "static/media/nav-icon1.svg": "/Harshita_portfolio.github.io/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.0f38620a.css.map": "/Harshita_portfolio.github.io/static/css/main.0f38620a.css.map",
-    "main.a920e353.js.map": "/Harshita_portfolio.github.io/static/js/main.a920e353.js.map",
+    "main.7044d05f.js.map": "/Harshita_portfolio.github.io/static/js/main.7044d05f.js.map",
     "358.226e2fea.chunk.js.map": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f38620a.css",
-    "static/js/main.a920e353.js"
+    "static/js/main.7044d05f.js"
   ]
 }
