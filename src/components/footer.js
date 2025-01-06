@@ -140,6 +140,7 @@ export const Footer = () => {
                         </Row>
                     </div>
                 </div>
+                <center className="center-bottom">Driven by innovation, powered by passion | © 2025 Harshita Chegondi. All Rights Reserved</center>
             </footer>
             <ToastContainer />
         </section>

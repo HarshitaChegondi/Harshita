@@ -670,9 +670,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .submit-button:hover {
-  background-color: #337fdb; /* Change background color on hover */
+  background-color: #050c8e; /* Change background color on hover */
   color: #FFFFFF; /* Change text color on hover */
   border-color: #FFFFFF; /* Optional: Change border color on hover */
+}
+
+.center-bottom {
+  color : #afb0bb;
+  font-style: italic;
+  font-size: 12px;
 }
 /* Responsive adjustments */
 @media (max-width: 4000px) {
