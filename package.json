@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
     "dotenv": "^16.4.7",
+    "events": "3.3.0",
     "express": "^4.21.2",
     "git": "^0.1.5",
     "nodemailer": "^6.9.16",
@@ -20,8 +21,7 @@
     "react-dom": "^19.0.0",
     "react-multi-carousel": "^2.8.5",
     "react-scripts": "5.0.1",
-    "react-toastify": "^11.0.2",
-    "events": "3.3.0"
+    "react-toastify": "^11.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
