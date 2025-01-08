@@ -323,6 +323,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
 }
 
+@media (max-width: 768px) {
+  .banner{
+    padding: 100px 0 50px 0;
+  }
+  .banner .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .col-5 {
+    order: -1; /* Move image to the top */
+    margin-bottom: 20px; /* Adds some spacing below the image */
+  }
+
+  .banner img {
+    width: 200px; /* Resize the image for mobile view */
+    height: 200px;
+    margin: 10px;
+    align:center;
+  }
+
+  .banner h1 {
+    font-size: 32px; /* Reduce font size for mobile */
+  }
+
+  .banner p {
+    font-size: 16px; /* Adjust paragraph font size for mobile */
+  }
+
+  .banner button {
+    margin-top: 20px;
+  }
+}
+
+
 /************ Experience CSS ********/
 .experience img{
   width: 100%;
@@ -337,6 +372,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .experience li{
   color: #918e8e;
+}
+
+.experience {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .experience .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience .col-4, .experience .col-7 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience img {
+    margin-bottom: 20px; /* Add some spacing between image and text */
+    width: 80%; /* Reduce image size on mobile for better visibility */
+  }
+
+  .experience h5 {
+    text-align: center;
+    font-size: 18px; /* Reduce font size for better mobile fit */
+  }
+
+  .experience ul {
+    text-align: center;
+  }
+
+  .experience li {
+    font-size: 14px; /* Adjust list item font size for mobile */
+  }
 }
 /************ Skills Css ************/
 .skill h5 {
@@ -400,6 +475,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0;
 }
 
+/* General styles for the section */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;  /* Adjust the space between the two sections */
+  flex-wrap: wrap; /* Makes it responsive */
+
+}
+
+/* Individual skill section (for each container) */
+.skill-section {
+  flex: 1;
+  min-width: 300px; /* Ensures each section has a minimum width */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.skill-section h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #050c8e;
+  text-align: center;
+}
+
+/* Skill Tile Container inside each section */
+.skill-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Individual skill tile */
+.skill-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.skill-tile img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Text under the image */
+.skill-tile p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skill-section {
+    min-width: 100%;
+  }
+}
 
 
 /************ Education CSS ********/

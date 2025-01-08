@@ -1,4 +1,4 @@
-import { Container, Table } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Java from "../assets/img/java-logo.png";
 import Python from "../assets/img/python.png";
 import C from "../assets/img/c.png";
@@ -31,109 +31,180 @@ import confluence from "../assets/img/confluence.png";
 import tf from "../assets/img/tf.png";
 import keras from "../assets/img/keras.png";
 
-
-
-
-
 export const Skills = () => {
   return (
     <section className="skill" id="skills">
-        <div><h2>TECHNICAL SKILLS</h2></div>
-      {/* Programming Languages Table */}
+      <div><h2>TECHNICAL SKILLS</h2></div>
+
+      {/* Programming Languages */}
       <Container>
-        <Table className="skill-table">
-          <tbody>
-            <tr>
-              <th>Programming Languages</th>
-              <td><img src={Java} alt="Java" /></td>
-              <td><img src={Python} alt="Python" /></td>
-              <td><img src={C} alt="C" /></td>
-              <td><img src={Cpp} alt="C++" /></td>
-              <td><img src={Apex} alt="Apex" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+  <div className="skills-container">
+    <div className="skill-section">
+      <h3>Programming Languages</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={Java} alt="Java" />
+          <p>Java</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Python} alt="Python" />
+          <p>Python</p>
+        </div>
+        <div className="skill-tile">
+          <img src={C} alt="C" />
+          <p>C</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Cpp} alt="C++" />
+          <p>C++</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Apex} alt="Apex" />
+          <p>Apex</p>
+        </div>
+      </div>
+    </div>
 
-      <Container>
-        <Table responsive className="skill-table">
-          <tbody>
-            <tr>
-              <th>Cloud Technologies</th>
-              <td><img src={Salesforce} alt="Salesforce" /></td>
-              <td><img src={AWS} alt="AWS" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+    <div className="skill-section">
+      <h3>Cloud Technologies</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={Salesforce} alt="Salesforce" />
+          <p>Salesforce</p>
+        </div>
+        <div className="skill-tile">
+          <img src={AWS} alt="AWS" />
+          <p>AWS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Container>
 
-      {/* Web Technologies Table */}
-      <Container>
-        <Table responsive className="skill-table">
-          <tbody>
-            <tr>
-              <th>Web Technologies</th>
-              <td><img src={HTML} alt="HTML" /></td>
-              <td><img src={CS} alt="CSS" /></td>
-              <td><img src={JavaScript} alt="JavaScript" /></td>
-              <td><img src={ReactImg} alt="React" /></td>
-              <td><img src={Nodejs} alt="Node.js" /></td>
-              <td><img src={Bootstrap} alt="Bootstrap" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+<Container>
+  <div className="skills-container">
+    {/* Cloud Technologies Section */}
+    <div className="skill-section">
+      <h3>Cloud Technologies</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={HTML} alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div className="skill-tile">
+          <img src={CS} alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div className="skill-tile">
+          <img src={JavaScript} alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div className="skill-tile">
+          <img src={ReactImg} alt="React" />
+          <p>React</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Nodejs} alt="Node.js" />
+          <p>Node.js</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Bootstrap} alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+      </div>
+    </div>
 
-      {/* Database Management Table */}
-      <Container>
-        
-        <Table responsive className="skill-table">
-          <tbody>
-            <tr>
-              <th>Database Management</th>
-              <td><img src={mysql} alt="MySQL" /></td>
-              <td><img src={oracle} alt="Oracle SQL" /></td>
-              <td><img src={postgresql} alt="PostgreSQL" /></td>
-              <td><img src={soql} alt="SOQL" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+    {/* Database Management Section */}
+    <div className="skill-section">
+      <h3>Database Management</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={mysql} alt="MySQL" />
+          <p>MySQL</p>
+        </div>
+        <div className="skill-tile">
+          <img src={oracle} alt="Oracle SQL" />
+          <p>Oracle SQL</p>
+        </div>
+        <div className="skill-tile">
+          <img src={postgresql} alt="PostgreSQL" />
+          <p>PostgreSQL</p>
+        </div>
+        <div className="skill-tile">
+          <img src={soql} alt="SOQL" />
+          <p>SOQL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Container>
 
-      <Container>
-      
-        <Table responsive className="skill-table">
+<Container>
+  <div className="skills-container">
+    {/* Developer Tools Section */}
+    <div className="skill-section">
+      <h3>Developer Tools</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={vscode} alt="VS Code" />
+          <p>VS Code</p>
+        </div>
+        <div className="skill-tile">
+          <img src={eclipse} alt="Eclipse" />
+          <p>Eclipse</p>
+        </div>
+        <div className="skill-tile">
+          <img src={tableau} alt="Tableau" />
+          <p>Tableau</p>
+        </div>
+        <div className="skill-tile">
+          <img src={formtitan} alt="FormTitan" />
+          <p>FormTitan</p>
+        </div>
+        <div className="skill-tile">
+          <img src={docker} alt="Docker" />
+          <p>Docker</p>
+        </div>
+        <div className="skill-tile">
+          <img src={jupyter} alt="Jupyter" />
+          <p>Jupyter</p>
+        </div>
+        <div className="skill-tile">
+          <img src={github} alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
 
-          <tbody>
-            <tr>
-              <th>Developer Tools</th>
-              <td><img src={vscode} alt="MySQL" /></td>
-              <td><img src={eclipse} alt="Oracle SQL" /></td>
-              <td><img src={tableau} alt="PostgreSQL" /></td>
-              <td><img src={formtitan} alt="SOQL" /></td>
-              <td><img src={docker} alt="SOQL" /></td>
-              <td><img src={jupyter} alt="SOQL" /></td>
-              <td><img src={github} alt="SOQL" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+    {/* Other Skills Section */}
+    <div className="skill-section">
+      <h3>Other Skills</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={git} alt="Git" />
+          <p>Git</p>
+        </div>
+        <div className="skill-tile">
+          <img src={jira} alt="Jira" />
+          <p>Jira</p>
+        </div>
+        <div className="skill-tile">
+          <img src={confluence} alt="Confluence" />
+          <p>Confluence</p>
+        </div>
+        <div className="skill-tile">
+          <img src={tf} alt="Terraform" />
+          <p>Terraform</p>
+        </div>
+        <div className="skill-tile">
+          <img src={keras} alt="Keras" />
+          <p>Keras</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Container>
 
-      <Container>
-        <Table responsive className="skill-table">
-
-          <tbody>
-            <tr>
-              <th>Other Skills</th>
-              <td><img src={git} alt="MySQL" /></td>
-              <td><img src={jira} alt="Oracle SQL" /></td>
-              <td><img src={confluence} alt="PostgreSQL" /></td>
-              <td><img src={tf} alt="SOQL" /></td>
-              <td><img src={keras} alt="SOQL" /></td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
     </section>
   );
 };
