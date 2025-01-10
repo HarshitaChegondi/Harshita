@@ -42,7 +42,7 @@ export const Footer = () => {
             const data = await response.json();
 
             if (response.ok) {
-                toast.success(`Details saved successfully in Salesforce! Record ID: ${data.id}`);
+                toast.success(`Details saved successfully in Salesforce!`);
                 setFormData({ name: '', email: '', queries: '' }); // Reset form
             } else {
                 console.error("Error saving to Salesforce:", data);
