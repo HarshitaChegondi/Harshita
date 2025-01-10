@@ -3,7 +3,6 @@ import { Row, Col, Form } from "react-bootstrap";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 export const Footer = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -18,33 +17,40 @@ export const Footer = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    // Send form data via Formspree
+    // Send form data to Salesforce
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
 
+        const SALESFORCE_API_URL = "https://uta-f-dev-ed.develop.my.salesforce.com/services/data/v57.0/sobjects/ContactForm__c";
+        const ACCESS_TOKEN = "00DHs000000QWhh!ARoAQOJlMY2krCivMc.LwKf7E0I.Y0AWZUnmcwAKvCn.91SId25jk5k2J9Ys5.j_.Y38lRjjekXSP0JOn06texb_kUF7TsU8";
+
         try {
-            const response = await fetch("https://formspree.io/f/mvggvrbl", {
+            const response = await fetch(SALESFORCE_API_URL, {
                 method: "POST",
                 headers: {
+                    "Authorization": `Bearer ${ACCESS_TOKEN}`,
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.queries, // Formspree expects a 'message' field
+                    Name: formData.name,
+                    Email__c: formData.email,
+                    Queries__c: formData.queries,
                 }),
             });
 
+            const data = await response.json();
+
             if (response.ok) {
-                toast.success("Email sent successfully to Harshita!");
+                toast.success(`Details saved successfully in Salesforce! Record ID: ${data.id}`);
                 setFormData({ name: '', email: '', queries: '' }); // Reset form
             } else {
-                toast.error("Failed to send email. Please try again.");
+                console.error("Error saving to Salesforce:", data);
+                toast.error("Failed to save details. Please try again.");
             }
         } catch (error) {
-            console.error("Error sending email:", error);
-            toast.error("Failed to send email. Please check your internet connection.");
+            console.error("Error:", error);
+            toast.error("Failed to connect to Salesforce. Please check your setup.");
         } finally {
             setLoading(false);
         }
@@ -58,7 +64,7 @@ export const Footer = () => {
                         <h3>Contact Me</h3>
                         <Form onSubmit={handleSubmit}>
                             <Row>
-                                <Col xs={12} >
+                                <Col xs={12}>
                                     <Form.Group className="mb-3" controlId="name">
                                         <Form.Label>Your Name</Form.Label>
                                         <Form.Control
@@ -74,7 +80,7 @@ export const Footer = () => {
                             </Row>
 
                             <Row>
-                                <Col xs={12} >
+                                <Col xs={12}>
                                     <Form.Group className="mb-3" controlId="email">
                                         <Form.Label>Your Email</Form.Label>
                                         <Form.Control
@@ -107,7 +113,7 @@ export const Footer = () => {
 
                             <Row>
                                 <Col>
-                                    <button type="submit" className="submit-button" disabled={loading}>
+                                    <button onClick={handleSubmit} className="submit-button" disabled={loading}>
                                         {loading ? "Sending..." : "Send"}
                                     </button>
                                 </Col>
