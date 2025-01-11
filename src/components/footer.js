@@ -10,6 +10,7 @@ export const Footer = () => {
         queries: '',
     });
     const [loading, setLoading] = useState(false);
+    const [formSubmitted, setFormSubmitted] = useState(false); // Track if form is submitted
 
     // Handle input changes
     const handleChange = (e) => {
@@ -20,7 +21,15 @@ export const Footer = () => {
     // Send form data to Salesforce
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setFormSubmitted(true); // Set form submission to true
         setLoading(true);
+
+        // Check if all required fields are filled
+        if (!formData.name || !formData.email || !formData.queries) {
+            toast.error("Please fill in all required fields.");
+            setLoading(false);
+            return;
+        }
 
         const SALESFORCE_API_URL = "https://uta-f-dev-ed.develop.my.salesforce.com/services/data/v57.0/sobjects/ContactForm__c";
         const ACCESS_TOKEN = "00DHs000000QWhh!ARoAQOJlMY2krCivMc.LwKf7E0I.Y0AWZUnmcwAKvCn.91SId25jk5k2J9Ys5.j_.Y38lRjjekXSP0JOn06texb_kUF7TsU8";
@@ -74,7 +83,11 @@ export const Footer = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
+                                            isInvalid={formSubmitted && !formData.name} // Show error if field is empty
                                         />
+                                        <Form.Control.Feedback type="invalid">
+                                            Name is required.
+                                        </Form.Control.Feedback>
                                     </Form.Group>
                                 </Col>
                             </Row>
@@ -90,7 +103,11 @@ export const Footer = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
+                                            isInvalid={formSubmitted && !formData.email} // Show error if field is empty
                                         />
+                                        <Form.Control.Feedback type="invalid">
+                                            Email is required.
+                                        </Form.Control.Feedback>
                                     </Form.Group>
                                 </Col>
                             </Row>
@@ -106,14 +123,18 @@ export const Footer = () => {
                                             value={formData.queries}
                                             onChange={handleChange}
                                             required
+                                            isInvalid={formSubmitted && !formData.queries} // Show error if field is empty
                                         />
+                                        <Form.Control.Feedback type="invalid">
+                                            Queries/Feedback is required.
+                                        </Form.Control.Feedback>
                                     </Form.Group>
                                 </Col>
                             </Row>
 
                             <Row>
                                 <Col>
-                                    <button onClick={handleSubmit} className="submit-button" disabled={loading}>
+                                    <button type="submit" className="submit-button" disabled={loading}>
                                         {loading ? "Sending..." : "Send"}
                                     </button>
                                 </Col>
