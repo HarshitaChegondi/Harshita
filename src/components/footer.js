@@ -52,7 +52,8 @@ export const Footer = () => {
 
             if (response.ok) {
                 toast.success(`Details saved successfully sent to Harshita!`);
-                setFormData({ name: '', email: '', queries: '' }); // Reset form
+                setFormData({ name: '', email: '', queries: '' }); // Reset form fields
+                setFormSubmitted(false); // Reset form submission state to hide error messages
             } else {
                 console.error("Error saving to Salesforce:", data);
                 toast.error("Failed to save details. Please try again.");
@@ -75,7 +76,7 @@ export const Footer = () => {
                             <Row>
                                 <Col xs={12}>
                                     <Form.Group className="mb-3" controlId="name">
-                                        <Form.Label>Your Name</Form.Label>
+                                        <Form.Label>Your Name *</Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="name"
@@ -95,7 +96,7 @@ export const Footer = () => {
                             <Row>
                                 <Col xs={12}>
                                     <Form.Group className="mb-3" controlId="email">
-                                        <Form.Label>Your Email</Form.Label>
+                                        <Form.Label>Your Email *</Form.Label>
                                         <Form.Control
                                             type="email"
                                             name="email"
@@ -115,7 +116,7 @@ export const Footer = () => {
                             <Row>
                                 <Col xs={12}>
                                     <Form.Group className="mb-3" controlId="queries">
-                                        <Form.Label>Your Queries or Feedback</Form.Label>
+                                        <Form.Label>Your Queries or Feedback *</Form.Label>
                                         <Form.Control
                                             as="textarea"
                                             rows={3}
