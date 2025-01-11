@@ -51,7 +51,7 @@ export const Footer = () => {
             const data = await response.json();
 
             if (response.ok) {
-                toast.success(`Details saved successfully sent to Harshita!`);
+                toast.success(`Details successfully sent to Harshita!`);
                 setFormData({ name: '', email: '', queries: '' }); // Reset form fields
                 setFormSubmitted(false); // Reset form submission state to hide error messages
             } else {

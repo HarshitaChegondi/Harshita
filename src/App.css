@@ -406,7 +406,40 @@ h2 {
   }
 
   .experience ul {
+    text-align: justify;
+
+  }
+
+  .experience li {
+    font-size: 14px; /* Adjust list item font size for mobile */
+  }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+  .experience .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience .col-4, .experience .col-7 {
+    width: 100%;
     text-align: center;
+  }
+
+  .experience img {
+    margin-bottom: 20px; /* Add some spacing between image and text */
+    width: 60%; /* Reduce image size on mobile for better visibility */
+  }
+
+  .experience h5 {
+    text-align: center;
+    font-size: 18px; /* Reduce font size for better mobile fit */
+  }
+
+  .experience ul {
+    text-align: justify;
+
   }
 
   .experience li {

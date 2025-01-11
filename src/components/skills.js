@@ -83,9 +83,9 @@ export const Skills = () => {
 
 <Container>
   <div className="skills-container">
-    {/* Cloud Technologies Section */}
+    {/* Web Technologies Section */}
     <div className="skill-section">
-      <h3>Cloud Technologies</h3>
+      <h3>Web Technologies</h3>
       <div className="skill-tile-container">
         <div className="skill-tile">
           <img src={HTML} alt="HTML" />
