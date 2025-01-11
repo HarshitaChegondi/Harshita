@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Harshita_portfolio.github.io/static/css/main.44a59b05.css",
-    "main.js": "/Harshita_portfolio.github.io/static/js/main.a58c1841.js",
+    "main.css": "/Harshita_portfolio.github.io/static/css/main.e819b0a2.css",
+    "main.js": "/Harshita_portfolio.github.io/static/js/main.920a22f5.js",
     "static/js/358.226e2fea.chunk.js": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js",
     "static/media/applause.jpg": "/Harshita_portfolio.github.io/static/media/applause.fcea3bf7230b92cd7eef.jpg",
+    "static/media/aiassiociate.jpg": "/Harshita_portfolio.github.io/static/media/aiassiociate.f758605d8a8d76f6f229.jpg",
     "static/media/coursera.jpg": "/Harshita_portfolio.github.io/static/media/coursera.5a1c6655684b0f9a7a83.jpg",
-    "static/media/nptel.jpg": "/Harshita_portfolio.github.io/static/media/nptel.59e87a66e87431a1b723.jpg",
     "static/media/salesforceJS1.jpg": "/Harshita_portfolio.github.io/static/media/salesforceJS1.30fbc3560c0d413cba79.jpg",
-    "static/media/HarshitaChegondi.pdf": "/Harshita_portfolio.github.io/static/media/HarshitaChegondi.217f7cd9d29867d3b825.pdf",
+    "static/media/HarshitaChegondi.pdf": "/Harshita_portfolio.github.io/static/media/HarshitaChegondi.c239b272f5430eeefbc6.pdf",
     "static/media/head.jpg": "/Harshita_portfolio.github.io/static/media/head.69bd6f0f9520e38130fb.jpg",
     "static/media/oracle.jpg": "/Harshita_portfolio.github.io/static/media/oracle.670b48dcc08249b82a9c.jpg",
     "static/media/confluence.png": "/Harshita_portfolio.github.io/static/media/confluence.073ae5e51ded474c8fd7.png",
@@ -37,12 +37,12 @@
     "static/media/github.svg": "/Harshita_portfolio.github.io/static/media/github.3ea7d9bcdf7bb4836e2175ac2a12c306.svg",
     "index.html": "/Harshita_portfolio.github.io/index.html",
     "static/media/nav-icon1.svg": "/Harshita_portfolio.github.io/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.44a59b05.css.map": "/Harshita_portfolio.github.io/static/css/main.44a59b05.css.map",
-    "main.a58c1841.js.map": "/Harshita_portfolio.github.io/static/js/main.a58c1841.js.map",
+    "main.e819b0a2.css.map": "/Harshita_portfolio.github.io/static/css/main.e819b0a2.css.map",
+    "main.920a22f5.js.map": "/Harshita_portfolio.github.io/static/js/main.920a22f5.js.map",
     "358.226e2fea.chunk.js.map": "/Harshita_portfolio.github.io/static/js/358.226e2fea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a59b05.css",
-    "static/js/main.a58c1841.js"
+    "static/css/main.e819b0a2.css",
+    "static/js/main.920a22f5.js"
   ]
 }
