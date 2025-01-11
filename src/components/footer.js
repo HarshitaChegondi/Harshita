@@ -83,7 +83,6 @@ export const Footer = () => {
                                             placeholder="First Name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            required
                                             isInvalid={formSubmitted && !formData.name} // Show error if field is empty
                                         />
                                         <Form.Control.Feedback type="invalid">
@@ -103,7 +102,6 @@ export const Footer = () => {
                                             placeholder="name@example.com"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            required
                                             isInvalid={formSubmitted && !formData.email} // Show error if field is empty
                                         />
                                         <Form.Control.Feedback type="invalid">
@@ -123,7 +121,6 @@ export const Footer = () => {
                                             name="queries"
                                             value={formData.queries}
                                             onChange={handleChange}
-                                            required
                                             isInvalid={formSubmitted && !formData.queries} // Show error if field is empty
                                         />
                                         <Form.Control.Feedback type="invalid">
