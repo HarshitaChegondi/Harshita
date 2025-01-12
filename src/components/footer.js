@@ -10,36 +10,61 @@ export const Footer = () => {
         queries: '',
     });
     const [loading, setLoading] = useState(false);
-    const [formSubmitted, setFormSubmitted] = useState(false); // Track if form is submitted
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
-    // Handle input changes
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    // Send form data to Salesforce
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormSubmitted(true); // Set form submission to true
+        setFormSubmitted(true);
         setLoading(true);
 
-        // Check if all required fields are filled
         if (!formData.name || !formData.email || !formData.queries) {
             toast.error("Please fill in all required fields.");
             setLoading(false);
             return;
         }
 
+        const TOKEN_URL = "https://login.salesforce.com/services/oauth2/token";
         const SALESFORCE_API_URL = "https://uta-f-dev-ed.develop.my.salesforce.com/services/data/v57.0/sobjects/ContactForm__c";
-        const ACCESS_TOKEN = "00DHs000000QWhh!ARoAQOJlMY2krCivMc.LwKf7E0I.Y0AWZUnmcwAKvCn.91SId25jk5k2J9Ys5.j_.Y38lRjjekXSP0JOn06texb_kUF7TsU8";
+
+        const CLIENT_ID = '3MVG9HB6vm3GZZR_DKUfFYaIliQ5kKRJAyfGOIFE4mJnTOVJo_4cGK6NRn3WFZFgpLl.hrDl2hmSMwdho7HWj';
+        const CLIENT_SECRET = '812C651DAEEA275A6BFC2702294C53D8E8B5BE24342CAD2C37FA6C296FA7F1E5';
+        const USERNAME = 'harshita.chegondi@blurise.com';
+        const PASSWORD = 'Harshita@056G9adj6SglenEXaijXqtNlVeD';
+
+        const formDataToken = new URLSearchParams();
+        formDataToken.append('grant_type', 'password');
+        formDataToken.append('client_id', CLIENT_ID);
+        formDataToken.append('client_secret', CLIENT_SECRET);
+        formDataToken.append('username', USERNAME);
+        formDataToken.append('password', PASSWORD);
 
         try {
+            // Get the access token
+            const tokenResponse = await fetch(TOKEN_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: formDataToken,
+            });
+
+            const tokenData = await tokenResponse.json();
+
+            if (!tokenResponse.ok) {
+                throw new Error(tokenData.error_description || "Error retrieving Salesforce token.");
+            }
+
+            const accessToken = tokenData.access_token;
+
+            // Submit the form data to Salesforce
             const response = await fetch(SALESFORCE_API_URL, {
-                method: "POST",
+                method: 'POST',
                 headers: {
-                    "Authorization": `Bearer ${ACCESS_TOKEN}`,
-                    "Content-Type": "application/json",
+                    'Authorization': `Bearer ${accessToken}`,
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     Name: formData.name,
@@ -48,14 +73,14 @@ export const Footer = () => {
                 }),
             });
 
-            const data = await response.json();
+            const responseData = await response.json();
 
             if (response.ok) {
-                toast.success(`Details successfully sent to Harshita!`);
-                setFormData({ name: '', email: '', queries: '' }); // Reset form fields
-                setFormSubmitted(false); // Reset form submission state to hide error messages
+                toast.success("Details successfully sent to Harshita!");
+                setFormData({ name: '', email: '', queries: '' });
+                setFormSubmitted(false);
             } else {
-                console.error("Error saving to Salesforce:", data);
+                console.error("Error saving to Salesforce:", responseData);
                 toast.error("Failed to save details. Please try again.");
             }
         } catch (error) {
@@ -83,7 +108,7 @@ export const Footer = () => {
                                             placeholder="First Name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            isInvalid={formSubmitted && !formData.name} // Show error if field is empty
+                                            isInvalid={formSubmitted && !formData.name}
                                         />
                                         <Form.Control.Feedback type="invalid">
                                             Name is required.
@@ -102,7 +127,7 @@ export const Footer = () => {
                                             placeholder="name@example.com"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            isInvalid={formSubmitted && !formData.email} // Show error if field is empty
+                                            isInvalid={formSubmitted && !formData.email}
                                         />
                                         <Form.Control.Feedback type="invalid">
                                             Email is required.
@@ -121,7 +146,7 @@ export const Footer = () => {
                                             name="queries"
                                             value={formData.queries}
                                             onChange={handleChange}
-                                            isInvalid={formSubmitted && !formData.queries} // Show error if field is empty
+                                            isInvalid={formSubmitted && !formData.queries}
                                         />
                                         <Form.Control.Feedback type="invalid">
                                             Queries/Feedback is required.
