@@ -361,6 +361,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Experience CSS ********/
 .experience img{
   width: 100%;
+  margin-top: 15px;
+
 }
 .experience h5{
   color:#050c8e;
@@ -444,6 +446,34 @@ h2 {
 
   .experience li {
     font-size: 14px; /* Adjust list item font size for mobile */
+  }
+}
+
+@media (min-width: 1025px) and (max-width:1199px) {
+  .experience img{
+    width: 100%;
+    margin-top: 15px;
+  
+  }
+  .experience h5{
+    color:#050c8e;
+    padding: 20px;
+  }
+  .experience h2{
+    text-align: center;
+    color:#0b0568;
+  }
+  .experience li{
+    color: #918e8e;
+  }
+  
+  .experience {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 /************ Skills Css ************/
@@ -672,6 +702,13 @@ h2 {
   align: center;
 }
 
+.project-tab-inner{
+  padding: 30px;
+  box-shadow: 4px 4px 8px #ffffff;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
 .project h2{
   text-align: center;
   color:#0b0568;
@@ -815,7 +852,7 @@ h2 {
   padding: 16px;
   max-width: 450px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   transition: transform 0.7s ease-in-out;
 }
 

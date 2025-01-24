@@ -15,6 +15,7 @@
     "events": "3.3.0",
     "express": "^4.21.2",
     "git": "^0.1.5",
+    "jsforce": "^3.6.4",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",

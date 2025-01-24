@@ -24,6 +24,9 @@ import formtitan from "../assets/img/formtitan.png";
 import tableau from "../assets/img/Tableau.png";
 import docker from "../assets/img/docker.png";
 import github from "../assets/img/github.svg";
+import postman from "../assets/img/postman.png";
+
+import restapi from "../assets/img/restapi.png";
 
 import git from "../assets/img/git.png";
 import jira from "../assets/img/jira.png";
@@ -111,6 +114,10 @@ export const Skills = () => {
           <img src={Bootstrap} alt="Bootstrap" />
           <p>Bootstrap</p>
         </div>
+        <div className="skill-tile">
+          <img src={restapi} alt="Bootstrap" />
+          <p>Rest API</p>
+        </div>
       </div>
     </div>
 
@@ -172,6 +179,10 @@ export const Skills = () => {
         <div className="skill-tile">
           <img src={github} alt="GitHub" />
           <p>GitHub</p>
+        </div>
+        <div className="skill-tile">
+          <img src={postman} alt="postman" />
+          <p>Postman</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import ABSYZ from "../assets/img/absyz.jpg";
-import Pena4 from "../assets/img/pena4.jpeg";
+import Pena4 from "../assets/img/pena4.jpg";
 
 export const Experience = () => {
     
@@ -10,13 +10,13 @@ export const Experience = () => {
             <div><h2>WORK EXPERIENCE</h2></div>
             <Container>
                 <Row>
-                    <Col xs={4} md={6} xl={2}>
+                    <Col xs={4} md={2} xl={2}>
                         <div>
                             <img src={ABSYZ} alt='Image' />
                         </div>
                     </Col>
                     
-                    <Col xs={7} md={6} xl={10}>
+                    <Col xs={7} md={10} xl={10}>
                         <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
                         <ul>
                             <li>Tackled inefficiencies within non-profit program management processes on company’s 
@@ -64,15 +64,15 @@ export const Experience = () => {
             </Container>
             <br/>
 
-            <Container>
+            <Container className="pena4-container">
                 <Row>
-                    <Col xs={4} md={6} xl={2}>
-                        <div>
+                    <Col xs={4} md={2} xl={2}>
+                        <div className="pena4-image">
                             <img src={Pena4} alt='Image' />
                         </div>
                     </Col>
 
-                    <Col xs={7} md={6} xl={10}>
+                    <Col xs={7} md={10} xl={10}>
                         <h5>Data Analyst Intern | May 2019 - Jun 2019</h5>
                         <ul>
                             <li>Applied advanced analytics to healthcare Charge Description Master Listings, 

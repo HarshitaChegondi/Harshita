@@ -15,7 +15,7 @@ export const Projects = () => {
                     <Col xs={12} sm={12} md={12} lg={12}>
                         <Tabs defaultActiveKey="project1" justify className="custom-tab">
                             <Tab eventKey="project1" title="Project 1">
-                                <div className="p1-content">
+                                <div className="project-tab-inner">
                                     <Row>
                                         <Col>
                                         <h4>Sentiment Analysis on Movie Review</h4>
@@ -43,7 +43,8 @@ export const Projects = () => {
                             </Tab>
 
                             <Tab eventKey="project2" title="Project 2">
-                                <div className="p2-content">
+
+                                <div className="project-tab-inner">
                                 <Row>
                                         <Col>
                                         <h4>MSC program MERN Stack </h4>
@@ -63,10 +64,11 @@ export const Projects = () => {
                                         </Col>
                                     </Row>
                                 </div>
+
                             </Tab>
 
                             <Tab eventKey="project3" title="Project 3">
-                                <div className="p3-content">
+                                <div className="project-tab-inner">
                                 <Row>
                                         <Col>
                                         <h4>Sorting Techniques Visualizer</h4>
