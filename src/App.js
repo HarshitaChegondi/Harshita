@@ -4,7 +4,6 @@ import {Banner} from './components/banner';
 import {Skills} from './components/skills.js';
 import {Experience} from './components/experience.js';
 import { Education } from './components/education.js';
-import {Projects} from './components/projects.js';
 import { Certifications } from './components/certifications.js';
 import { Footer } from './components/footer.js';
 import { useEffect } from "react";
@@ -32,7 +31,6 @@ function App() {
       <Experience/>
       <Skills/>
       <Education />
-      <Projects />
       <Certifications />
       <Footer />
     </div>

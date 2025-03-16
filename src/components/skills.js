@@ -1,33 +1,48 @@
 import { Container } from 'react-bootstrap';
-import Java from "../assets/img/java-logo.png";
+import SQL from "../assets/img/sql.png";
 import Python from "../assets/img/python.png";
-import C from "../assets/img/c.png";
-import Cpp from "../assets/img/cpp.png";
-import Apex from "../assets/img/apexpng.png";
-import Salesforce from "../assets/img/Salesforce.jpg";
+import Hive from "../assets/img/hive.png";
+import Shell from "../assets/img/shell.png";
+import Pyspark from "../assets/img/pyspark.jpeg";
 import AWS from "../assets/img/aws.png";
-import HTML from "../assets/img/html.png";
-import CS from "../assets/img/css.png";
-import JavaScript from "../assets/img/js.png";
-import ReactImg from "../assets/img/react.png";
-import Bootstrap from "../assets/img/bootstrap.png";
-import Nodejs from "../assets/img/nodejs.png";
+import Azure from "../assets/img/azure.jpg";
+import GCP from "../assets/img/gcp.png";
+import DynamoDB from "../assets/img/dynamodb.png";
+import MongoDB from "../assets/img/mongodb.webp";
+import Cassandra from "../assets/img/cassandra.png";
 import mysql from "../assets/img/mysql.png";
 import oracle from "../assets/img/oracle.jpg";
 import postgresql from "../assets/img/postgres.jpg";
-import soql from "../assets/img/SOQL.webp";
+import MSSQL from "../assets/img/mssql.png";
+import HDFS from "../assets/img/hdfs.jpg";
+import NifI from "../assets/img/nifi.webp";
+import sqoop from "../assets/img/sqoop.png";
+import pig from "../assets/img/pig.png";
+import oozie from "../assets/img/oozie.jpeg";
+import impala from "../assets/img/impala.png";
+import zookeeper from "../assets/img/zookeeper.png";
+import spark from "../assets/img/spark.png";
+import kafka from "../assets/img/kafka.png";
+import powerbi from "../assets/img/powerbi.png";
+import ssrs from "../assets/img/ssrs.jpg";
+import maven from "../assets/img/maven.png";
+import jenkins from "../assets/img/jenkins.png";
+import snowflake from "../assets/img/Snowflake.png";
+import airflow from "../assets/img/airflow.jpg";
+import informatica from "../assets/img/informatica.webp";
+
 
 import vscode from "../assets/img/vs.jpg";
 import jupyter from "../assets/img/jupyter.png";
 import eclipse from "../assets/img/eclipse.svg";
-import formtitan from "../assets/img/formtitan.png";
+
 import tableau from "../assets/img/Tableau.png";
 import docker from "../assets/img/docker.png";
 import github from "../assets/img/github.svg";
 import postman from "../assets/img/postman.png";
 
-import restapi from "../assets/img/restapi.png";
-
+import teradata from "../assets/img/teradata.png";
+import vertica from "../assets/img/vertica.png";
 import git from "../assets/img/git.png";
 import jira from "../assets/img/jira.png";
 import confluence from "../assets/img/confluence.png";
@@ -46,7 +61,7 @@ export const Skills = () => {
       <h3>Programming Languages</h3>
       <div className="skill-tile-container">
         <div className="skill-tile">
-          <img src={Java} alt="Java" />
+          <img src={SQL} alt="SQL" />
           <p>Java</p>
         </div>
         <div className="skill-tile">
@@ -54,16 +69,12 @@ export const Skills = () => {
           <p>Python</p>
         </div>
         <div className="skill-tile">
-          <img src={C} alt="C" />
+          <img src={Shell} alt="Shell Scripting" />
           <p>C</p>
         </div>
         <div className="skill-tile">
-          <img src={Cpp} alt="C++" />
+          <img src={Pyspark} alt="PySpark" />
           <p>C++</p>
-        </div>
-        <div className="skill-tile">
-          <img src={Apex} alt="Apex" />
-          <p>Apex</p>
         </div>
       </div>
     </div>
@@ -72,12 +83,16 @@ export const Skills = () => {
       <h3>Cloud Technologies</h3>
       <div className="skill-tile-container">
         <div className="skill-tile">
-          <img src={Salesforce} alt="Salesforce" />
-          <p>Salesforce</p>
-        </div>
-        <div className="skill-tile">
           <img src={AWS} alt="AWS" />
           <p>AWS</p>
+        </div>
+        <div className="skill-tile">
+          <img src={Azure} alt="Azure" />
+          <p>Azure</p>
+        </div>
+        <div className="skill-tile">
+          <img src={GCP} alt="GCP" />
+          <p>GCP</p>
         </div>
       </div>
     </div>
@@ -88,42 +103,28 @@ export const Skills = () => {
   <div className="skills-container">
     {/* Web Technologies Section */}
     <div className="skill-section">
-      <h3>Web Technologies</h3>
+      <h3>No SQL Databases</h3>
       <div className="skill-tile-container">
+       
+        
         <div className="skill-tile">
-          <img src={HTML} alt="HTML" />
-          <p>HTML</p>
+          <img src={DynamoDB} alt="Dynamo DB" />
+          <p>Dynamo DB</p>
         </div>
         <div className="skill-tile">
-          <img src={CS} alt="CSS" />
-          <p>CSS</p>
+          <img src={MongoDB} alt="Mongo DB" />
+          <p>Mongo DB</p>
         </div>
         <div className="skill-tile">
-          <img src={JavaScript} alt="JavaScript" />
-          <p>JavaScript</p>
-        </div>
-        <div className="skill-tile">
-          <img src={ReactImg} alt="React" />
-          <p>React</p>
-        </div>
-        <div className="skill-tile">
-          <img src={Nodejs} alt="Node.js" />
-          <p>Node.js</p>
-        </div>
-        <div className="skill-tile">
-          <img src={Bootstrap} alt="Bootstrap" />
-          <p>Bootstrap</p>
-        </div>
-        <div className="skill-tile">
-          <img src={restapi} alt="Bootstrap" />
-          <p>Rest API</p>
+          <img src={Cassandra} alt="cassandra" />
+          <p>Cassandra</p>
         </div>
       </div>
     </div>
 
     {/* Database Management Section */}
     <div className="skill-section">
-      <h3>Database Management</h3>
+      <h3>SQL Database</h3>
       <div className="skill-tile-container">
         <div className="skill-tile">
           <img src={mysql} alt="MySQL" />
@@ -138,8 +139,16 @@ export const Skills = () => {
           <p>PostgreSQL</p>
         </div>
         <div className="skill-tile">
-          <img src={soql} alt="SOQL" />
-          <p>SOQL</p>
+          <img src={teradata} alt="teradata" />
+          <p>Teradata</p>
+        </div>
+        <div className="skill-tile">
+          <img src={MSSQL} alt="mssql" />
+          <p>MS SQL</p>
+        </div>
+        <div className="skill-tile">
+          <img src={vertica} alt="vertica" />
+          <p>Vertica</p>
         </div>
       </div>
     </div>
@@ -147,70 +156,116 @@ export const Skills = () => {
 </Container>
 
 <Container>
+
   <div className="skills-container">
     {/* Developer Tools Section */}
     <div className="skill-section">
-      <h3>Developer Tools</h3>
+      <h3>Hadoop/Big Data Technologies </h3>
       <div className="skill-tile-container">
         <div className="skill-tile">
-          <img src={vscode} alt="VS Code" />
-          <p>VS Code</p>
+          <img src={HDFS} alt="HDFS" />
+          <p>HDFS</p>
         </div>
         <div className="skill-tile">
-          <img src={eclipse} alt="Eclipse" />
-          <p>Eclipse</p>
+          <img src={NifI} alt="NiFi" />
+          <p>Apache NiFi</p>
+        </div>
+        <div className="skill-tile">
+          <img src={sqoop} alt="sqoop" />
+          <p>Sqoop</p>
+        </div>
+        <div className="skill-tile">
+          <img src={pig} alt="pig" />
+          <p>Apache Pig</p>
+        </div>
+        <div className="skill-tile">
+          <img src={oozie} alt="oozie" />
+          <p>oozie</p>
+        </div>
+        <div className="skill-tile">
+          <img src={impala} alt="impala" />
+          <p>Impala</p>
+        </div>
+        <div className="skill-tile">
+          <img src={zookeeper} alt="Zookeeper" />
+          <p>Zookeeper</p>
+        </div>
+        <div className="skill-tile">
+          <img src={spark} alt="spark" />
+          <p>Apache Spark</p>
+        </div>
+        <div className="skill-tile">
+          <img src={spark} alt="spark" />
+          <p>Apache Spark</p>
+        </div>
+        <div className="skill-tile">
+          <img src={kafka} alt="kafka" />
+          <p>Apache Kafka</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="skill-section">
+      <h3>Data Visualization</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={powerbi} alt="PowerBI" />
+          <p>Power BI</p>
         </div>
         <div className="skill-tile">
           <img src={tableau} alt="Tableau" />
           <p>Tableau</p>
         </div>
         <div className="skill-tile">
-          <img src={formtitan} alt="FormTitan" />
-          <p>FormTitan</p>
-        </div>
-        <div className="skill-tile">
-          <img src={docker} alt="Docker" />
-          <p>Docker</p>
-        </div>
-        <div className="skill-tile">
-          <img src={jupyter} alt="Jupyter" />
-          <p>Jupyter</p>
-        </div>
-        <div className="skill-tile">
-          <img src={github} alt="GitHub" />
-          <p>GitHub</p>
-        </div>
-        <div className="skill-tile">
-          <img src={postman} alt="postman" />
-          <p>Postman</p>
+          <img src={ssrs} alt="SSRS" />
+          <p>SSRS</p>
         </div>
       </div>
     </div>
+  </div>
 
-    {/* Other Skills Section */}
+</Container>
+
+<Container>
+  <div className="skills-container">
+    {/* Web Technologies Section */}
     <div className="skill-section">
-      <h3>Other Skills</h3>
+      <h3>Build and Deployment tools</h3>
       <div className="skill-tile-container">
+       
+        
+        <div className="skill-tile">
+          <img src={maven} alt="maven" />
+          <p>Maven</p>
+        </div>
         <div className="skill-tile">
           <img src={git} alt="Git" />
           <p>Git</p>
         </div>
         <div className="skill-tile">
-          <img src={jira} alt="Jira" />
-          <p>Jira</p>
+          <img src={jenkins} alt="jenkins" />
+          <p>Jenkins</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Database Management Section */}
+    <div className="skill-section">
+      <h3>ETL and Integration tools</h3>
+      <div className="skill-tile-container">
+        <div className="skill-tile">
+          <img src={snowflake} alt="Snowflake" />
+          <p>Snowflake</p>
         </div>
         <div className="skill-tile">
-          <img src={confluence} alt="Confluence" />
-          <p>Confluence</p>
+          <img src={airflow} alt="Airflow" />
+          <p>Apache Airflow</p>
         </div>
         <div className="skill-tile">
-          <img src={tf} alt="Terraform" />
-          <p>Terraform</p>
+          <img src={informatica} alt="Informatica" />
+          <p>Informatica</p>
         </div>
-        <div className="skill-tile">
-          <img src={keras} alt="Keras" />
-          <p>Keras</p>
-        </div>
+        
       </div>
     </div>
   </div>

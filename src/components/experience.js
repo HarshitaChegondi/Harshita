@@ -1,6 +1,12 @@
 import { Row, Col, Container } from "react-bootstrap";
 import ABSYZ from "../assets/img/absyz.jpg";
 import Pena4 from "../assets/img/pena4.jpg";
+import Verizon from "../assets/img/verizon.jpg";
+import GAF from "../assets/img/GAF.png";
+import Schemax from "../assets/img/schemax.jpeg";
+import iMerit from "../assets/img/iMerit.jpg";
+
+
 
 export const Experience = () => {
     
@@ -8,57 +14,43 @@ export const Experience = () => {
         <section className="experience" id="experience">
             <br/>
             <div><h2>WORK EXPERIENCE</h2></div>
+            
             <Container>
                 <Row>
                     <Col xs={4} md={2} xl={2}>
                         <div>
-                            <img src={ABSYZ} alt='Image' />
+                            <img src={Verizon} alt='Image' />
                         </div>
                     </Col>
                     
                     <Col xs={7} md={10} xl={10}>
                         <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
-                        <ul>
-                            <li>Tackled inefficiencies within non-profit program management processes on company’s 
-                                CRM by translating complex diagrams into functional systems using Salesforce framework; 
-                                leveraged FormTitan to enhance user interface and automate workflows, achieving a notable 
-                                20% increase in customer satisfaction ratings  </li>
-                            <li>Spearheaded modernization efforts by redesigning web architectures using Salesforce CMS technologies; 
-                                addressed the problem of delayed access to critical data, achieving a 40% reduction in decision-making time 
-                                for stakeholders </li>
-                            <li>Refined underlying technology infrastructure linked with KPIs enabling real-time access to crucial data 
-                                trends resulting not only in greater analytical precision but also facilitating immediate responses during 
-                                high-stakes decision-making scenarios faced daily</li>
-                            <li>Automated the manual auditing by implementing FormTitan within Salesforce, fulfilling 
-                                client requests for digitization while leveraging Apex coding techniques that cut 
-                                processing time by half and achieved 30% reduction in errors </li>
-                        </ul>
+                        <p>Verizon, a global leader in telecommunications, is committed to delivering scalable, data-driven 
+                            solutions by leveraging Azure cloud services to enhance data integration, transformation, and real-time analytics. 
+                            This project utilized Azure Databricks, Azure Data Factory, HDInsight, Cosmos DB and Azure SQL Data Warehouse 
+                            for smooth data transformation and integration. AI-driven insights and smooth workflows for business operations 
+                            were made possible using Apache Airflow, Spark and Power BI.</p>
+                    </Col>
+                </Row>
+            </Container>
+            <br/>
+            
 
-                        <h5>Software Engineer | Apr 2021 - Apr 2022</h5>
-                        <ul>
-                            <li>Led the implementation of a customized application form within Salesforce HEDA using 
-                                Aura components, JavaScript, and Apex; designed and developed complex inter-object relationships
-                                 resulting in 35% increased data processing efficiency for client operations </li>
-                            <li>Identified and resolved critical bugs on the client’s website by writing and 
-                                executing more than 50 targeted test cases, enhancing backend stability and resulting 
-                                in a significant increase in end user satisfaction score </li>
-                            <li>Created robust unit tests as part of a test-driven development strategy that led to an overall 
-                                reduction in critical bugs in production environments by 50%; this directly supported system 
-                                availability initiatives</li>
-                        </ul>
-
-                        <h5>Salesforce Intern | Sept 2020 - Apr 2021</h5>
-                        <ul>
-                            <li>By orchestrating workflows and validation rules within Salesforce platforms, 
-                        there was a noticeable enhancement in operational efficiency. Developing Asynchronous 
-                        Apex solutions not only improved system performance but also reduced processing times 
-                        for bulk transactions dramatically</li>
-                            <li>Additionally, creating comprehensive test classes 
-                        ensured that all automated processes maintained high reliability levels while decreasing 
-                        error rates by 30%. The opportunity to work alongside experienced developers while integrating 
-                        Lightning Aura Components into existing frameworks enriched both technical skills and practical 
-                        knowledge of user experience design. </li>
-                        </ul>
+            <Container>
+                <Row>
+                    <Col xs={4} md={2} xl={2}>
+                        <div>
+                            <img src={GAF} alt='Image' />
+                        </div>
+                    </Col>
+                    
+                    <Col xs={7} md={10} xl={10}>
+                        <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
+                        <p> GAF, a leading roofing and waterproofing manufacturer, built a scalable AWS data lake to 
+                        combine data from SQL server, Hive and PostgreSQL. Leveraging Snowflake, MongoDB and Spark, the project 
+                        optimized data transformation and also automated ETL pipelines with Apache Airflow, AWS Glue and Lambda. 
+                        Fraud detection was made possible by real-time streaming using Kafka, enhanced business intelligence and decision
+                        making with Tableau dashboards and query optimization. </p>
                     </Col>
                 </Row>
             </Container>
@@ -74,15 +66,47 @@ export const Experience = () => {
 
                     <Col xs={7} md={10} xl={10}>
                         <h5>Data Analyst Intern | May 2019 - Jun 2019</h5>
-                        <ul>
-                            <li>Applied advanced analytics to healthcare Charge Description Master Listings, 
-                                identifying cost-saving opportunities, achieving a 15% operational expense reduction, 
-                                and optimizing financial efficiency for institutions </li>
-                            <li>Transformed raw data into actionable insights using Tableau, leading to a 25 percent 
-                                increase in customer lifetime value through strategic analysis and data-driven decision-making</li>
-                        </ul>
+                        <p> The project built an extensible AWS data integration and analysis system using services like S3, 
+EMR, Redshift, Athena and Glue for smooth ETL process and querying. AWS Glue and Airflow automated processes 
+while Snowflake and Databricks improved big data processing. Real-time reporting was made achievable by using 
+Tableau and Power BI, monitored them using CloudWatch, CloudTrail and SNS.</p>
                     </Col>
                     
+                </Row>
+            </Container>
+
+            <Container>
+                <Row>
+                    <Col xs={4} md={2} xl={2}>
+                        <div>
+                        <img src={Schemax} alt='Image' />
+                        </div>
+                    </Col>
+                    
+                    <Col xs={7} md={10} xl={10}>
+                        <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
+                        <p> With a focus on corporate applications, business intelligence and data integration, Schemax 
+Expert Techno Craft Pvt. Ltd. offers robust solutions that facilitate productivity in operations and data-driven decision 
+making. With the objective to improve data analysis and report, the project included creating interactive Tableau 
+dashboards, obtaining data from various sources, and constructing reliable ETL pipelines with Informatica. </p>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container>
+                <Row>
+                    <Col xs={4} md={2} xl={2}>
+                        <div>
+                            <img src={iMerit} alt='Image' />
+                        </div>
+                    </Col>
+                    
+                    <Col xs={7} md={10} xl={10}>
+                        <h5>Senior Software Engineer | Apr 2022 - Jan 2023</h5>
+                        <p>  AI-driven solutions and data annotation are the areas of expertise for IMerit Technology Services 
+Pvt. Ltd. In order to improve business insights, I developed machine learning models, automated data aggregation, 
+and streamlined pipelines as a data engineer. </p>
+                    </Col>
                 </Row>
             </Container>
         </section>

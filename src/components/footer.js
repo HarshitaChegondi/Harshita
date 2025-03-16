@@ -119,14 +119,14 @@ export const Footer = () => {
                         <Row>
                             <Col xs={12}>
                                 <div>
-                                    <h5>harshita.chegondi@gmail.com</h5>
+                                    <h5>harshitach48@outlook.com</h5>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={12}>
                                 <div>
-                                    <h5>+1 (682)-392-5855</h5>
+                                    <h5>+1 (972)-763-5673</h5>
                                 </div>
                             </Col>
                         </Row>
@@ -139,7 +139,7 @@ export const Footer = () => {
                         </Row>
                     </div>
                 </div>
-                <center className="center-bottom">Driven by innovation, powered by passion | © 2025 Harshita Chegondi. All Rights Reserved</center>
+                <center className="center-bottom">Driven by innovation, powered by passion | © 2025 Harshita C. All Rights Reserved</center>
             </footer>
             <ToastContainer />
         </section>

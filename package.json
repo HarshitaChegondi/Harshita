@@ -1,5 +1,5 @@
 {
-  "homepage": "http://HarshitaChegondi.github.io/HarshitaChegondi",
+  "homepage": "http://HarshitaC.github.io/",
   "name": "mybio",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "jsforce": "^3.6.4",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
-    "react-bootstrap": "^2.10.7",
+    "react-bootstrap": "^2.10.9",
     "react-bootstrap-icons": "^1.11.5",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/img/head.jpg";
-import resume from '../assets/HarshitaChegondi.pdf'
+import resume from '../assets/HARSHITAC_Resume.pdf'
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -49,7 +49,7 @@ export const Banner = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = resume; // Replace with the file's URL
-        link.download = 'HarshitaChegondi.pdf'; // Set the file name
+        link.download = 'HarshitaC_Resume.pdf'; // Set the file name
         link.click();
 
        
@@ -64,11 +64,11 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <h1 className="bannerH1">{'Hi! I am Harshita'}</h1>
                         <h3><span className="wrap">{text}</span></h3>
-                        <div><p>Full-stack developer with expertise in Salesforce, skilled in streamlining CRM workflows, 
-                            automating processes, and enhancing data accessibility. Proficient in Apex, JavaScript, and 
-                            FormTitan for building efficient solutions. Experienced in web architecture redesign, debugging, 
-                            and test-driven development, delivering scalable systems that improve performance, decision-making, 
-                            and user satisfaction</p></div>
+                        <div><p>7+ years of experience in Data Engineering, specializing in designing and developing 
+                            data pipelines, migration, modeling, and transformation using cloud platforms AWS, Azure and GCP
+                            and big data tools. Expertise in Databricks, Apache Spark, and Airflow to optimize performance 
+                            and automation. Skilled in building scalable data architectures for real-time insights and analytics, 
+                            ensuring seamless data flow and informed decision-making.</p></div>
                         <button className='tagline' onClick={handleDownload}>Download Resume <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={5} md={5} xl={2}>
