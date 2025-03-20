@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/github.png';
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -45,7 +45,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <h3 className="logoName">Harshita Chegondi</h3>
+                    <h3 className="logoName">Harshita's Portfolio</h3>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -82,12 +82,6 @@ export const NavBar = () => {
                             Education
                         </Nav.Link>
 
-                        <Nav.Link
-                            href="#projects"
-                            className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('projects')}>
-                            Projects
-                        </Nav.Link>
 
                         <Nav.Link
                             href="#certifications"
@@ -99,7 +93,6 @@ export const NavBar = () => {
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/harshitachegondi/" target="_blank"><img src={navIcon1} alt="Icon1" /></a>
-                            <a href="https://github.com/HarshitaChegondi" target="_blank"><img src={navIcon2} alt="Icon2" /></a>
                         </div>
                         <button className="vvd" onClick={() => {document.getElementById('footer-down')
                                                                 .scrollIntoView({ behavior: 'smooth' });}}>

@@ -22,6 +22,8 @@
   box-sizing: border-box;
 }
 
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -98,7 +100,7 @@ nav.navbar.scrolled {
   padding: 0px 0;
 }
 nav.navbar a.navbar-brand {
-    width: 28%; /*helps to add elements*/
+    width: 37%; /*helps to add elements*/
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -357,8 +359,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
-/************ Experience CSS ********/
+/*****************Experience CSS***************/
 .experience img{
   width: 100%;
   margin-top: 15px;
@@ -366,13 +367,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .experience h5{
   color:#050c8e;
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
 }
 .experience h2{
   text-align: center;
   color:#0b0568;
 }
-.experience li{
+.experience p{
   color: #918e8e;
 }
 
@@ -405,6 +406,8 @@ h2 {
   .experience h5 {
     text-align: center;
     font-size: 18px; /* Reduce font size for better mobile fit */
+    color:#050c8e;
+    padding: 20px 20px 20px 0px;
   }
 
   .experience ul {
@@ -412,8 +415,9 @@ h2 {
 
   }
 
-  .experience li {
+  .experience p{
     font-size: 14px; /* Adjust list item font size for mobile */
+    text-align: justify;
   }
 }
 
@@ -434,9 +438,9 @@ h2 {
     width: 60%; /* Reduce image size on mobile for better visibility */
   }
 
-  .experience h5 {
-    text-align: center;
-    font-size: 18px; /* Reduce font size for better mobile fit */
+  .experience h5{
+    color:#050c8e;
+    padding: 20px 20px 20px 0px;
   }
 
   .experience ul {
@@ -444,8 +448,9 @@ h2 {
 
   }
 
-  .experience li {
+  .experience p{
     font-size: 14px; /* Adjust list item font size for mobile */
+    text-align: justify;
   }
 }
 
@@ -457,7 +462,7 @@ h2 {
   }
   .experience h5{
     color:#050c8e;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
   }
   .experience h2{
     text-align: center;
@@ -476,6 +481,8 @@ h2 {
     margin-bottom: 30px;
   }
 }
+
+
 /************ Skills Css ************/
 .skill h5 {
   color: #050c8e;
